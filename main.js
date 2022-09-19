@@ -11,27 +11,29 @@ const myTime = () => {
     am.innerText = "AM"
   }
 
-  if (hours > 12) {
-    hours = hours - 12
-  }
-  
-  
-  if (seconds <10) {
+
+
+  if (seconds < 10) {
     document.getElementById("sec").innerText = `0${seconds}`
   }
-  
-  else{
+
+
+  else {
     document.getElementById("sec").innerText = seconds
   }
 
-  document.getElementById("hou").innerText = hours
-  document.getElementById("min").innerText = minutes
-  
 
+  if (hours > 12) {
+    document.getElementById("hou").innerText = hours - 12
+  }
 
+  if (minutes < 10) {
+    document.getElementById("min").innerText = `0${minutes}`
+  }
 
-
-
+  else {
+    document.getElementById("min").innerText = minutes
+  }
 
 }
 
