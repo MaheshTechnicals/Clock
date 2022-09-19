@@ -1,3 +1,20 @@
 body {
-    font-size: 15pt;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
 }
+
+
+.clock {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid white;
+  font-size: 30px;
+}
+
