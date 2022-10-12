@@ -22,6 +22,7 @@ const myTime = () => {
     document.getElementById("sec").innerText = seconds
   }
 
+document.getElementById("hou").innerText=hours
 
   if (hours > 12) {
     document.getElementById("hou").innerText = hours - 12
